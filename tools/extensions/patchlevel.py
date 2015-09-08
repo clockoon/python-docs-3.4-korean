@@ -15,7 +15,7 @@ import re
 import sys
 
 def get_header_version_info(srcdir):
-    patchlevel_h = os.path.join(srcdir, '..', 'Include', 'patchlevel.h')
+    patchlevel_h = os.path.join(srcdir, '.', 'patchlevel.h')
 
     # This won't pick out all #defines, but it will pick up the ones we
     # care about.
@@ -61,7 +61,7 @@ def get_version_info():
         return get_header_version_info('.')
     except (IOError, OSError):
         version, release = get_sys_version_info()
-        print >>sys.stderr, 'Can\'t get version info from Include/patchlevel.h, ' \
+        print >>sys.stderr, 'Can\'t get version info from patchlevel.h, ' \
               'using version of this interpreter (%s).' % release
         return version, release
 
