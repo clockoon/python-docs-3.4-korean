@@ -4,40 +4,32 @@
   The Python Tutorial
 ######################
 
-Python is an easy to learn, powerful programming language. It has efficient
-high-level data structures and a simple but effective approach to
-object-oriented programming. Python's elegant syntax and dynamic typing,
-together with its interpreted nature, make it an ideal language for scripting
-and rapid application development in many areas on most platforms.
+파이썬은 배우기 쉽고 강력한 프로그래밍 언어입니다. 효율적인 고차원 데이터 구조를 가지고 있으며, 
+객체지향에 대한 단순하지만 효과적인 접근이 가능합니다. 파이썬의 우아한 문법과 동적 타이핑은 인터프리터 환경과 
+결합하여 거의 대부분의 분야와 플랫폼에 대해 스크립팅과 빠른 어플리케이션 개발을 제공합니다.
 
-The Python interpreter and the extensive standard library are freely available
-in source or binary form for all major platforms from the Python Web site,
-https://www.python.org/, and may be freely distributed. The same site also
-contains distributions of and pointers to many free third party Python modules,
-programs and tools, and additional documentation.
+파이썬 인터프리터와 다양한 표준 라이브러리는 소스 혹은 플랫폼 별 바이너리 형태로 파이썬 웹 사이트, 
+https://www.python.org/ 에서 자유롭게 이용하고 배포할 수 있습니다. 이 사이트에서는 또한 여러 가지 
+서드파티 파이썬 모듈, 프로그램, 툴, 또는 추가적인 문서를 제공합니다.
 
-The Python interpreter is easily extended with new functions and data types
-implemented in C or C++ (or other languages callable from C). Python is also
-suitable as an extension language for customizable applications.
+파이썬 인터프리터는 C나 C++의 (또는 C에서 호출 가능한 다른 언어의) 함수와 데이터 타입을 통해 확장할 수 
+있습니다. 어플리케이션의 커스터마이제이션을 위한 확장 스크립트 언어로써도 활용할 수 있습니다.
 
-This tutorial introduces the reader informally to the basic concepts and
-features of the Python language and system. It helps to have a Python
-interpreter handy for hands-on experience, but all examples are self-contained,
-so the tutorial can be read off-line as well.
+이 튜토리얼은 독자들에게 파이썬 언어와 시스템의 기본적인 개념과 기능을 소개하는 데에 목적이 있습니다. 
+즉 파이썬 인터프리터를 실용적인 목적에 간단히 사용할 수 있도록 쓰여졌습니다. 그러나 모든 설명에 대한 예제를 
+제공하므로, 그저 읽어보기만 해도 도움이 될 것입니다.
 
-For a description of standard objects and modules, see :ref:`library-index`.
-:ref:`reference-index` gives a more formal definition of the language.  To write
-extensions in C or C++, read :ref:`extending-index` and
-:ref:`c-api-index`. There are also several books covering Python in depth.
+표준 오브젝트와 모듈에 대한 설명은 :ref:`library-index`를 참고하세요. 
+:ref:`reference-index`에서는 파이썬에 대한 더 정확한 정의를 담고 있습니다. 
+C나 C++에 대한 확장 용도로 사용하려면 :ref:`extending-index`와 
+:ref:`c-api-index`가 도움이 될 것입니다. 이 외에도 파이썬에 대해 다룬 책들이 많이 나와 있습니다.
 
-This tutorial does not attempt to be comprehensive and cover every single
-feature, or even every commonly used feature. Instead, it introduces many of
-Python's most noteworthy features, and will give you a good idea of the
-language's flavor and style. After reading it, you will be able to read and
-write Python modules and programs, and you will be ready to learn more about the
-various Python library modules described in :ref:`library-index`.
+이 튜토리얼은 모든 기능에 대해, 혹은 모든 주요한 기능에 대해 일일이 친절하게 설명하고 있지는 않습니다.
+대신 파이썬에서 가장 핵심적인 기능 중, 파이썬이라는 언어의 특징과 스타일을 이해할 수 있는 내용을 선정해 
+보여줄 것입니다. 이 튜토리얼을 읽으면 파이썬 모듈과 프로그램을 읽어낼 수 있는 능력을 가질 수 있을 것입니다. 
+또한 :ref:`library-index`에 나와있는 다양한 파이썬 라이브러리 모듈들을 이해할 수 있을 것입니다.
 
-The :ref:`glossary` is also worth going through.
+시간이 난다면 :ref:`glossary`도 읽어보길 추천합니다.
 
 .. toctree::
    :numbered:
@@ -53,6 +45,7 @@ The :ref:`glossary` is also worth going through.
    classes.rst
    stdlib.rst
    stdlib2.rst
+   venv.rst
    whatnow.rst
    interactive.rst
    floatingpoint.rst

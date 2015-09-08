@@ -1,87 +1,66 @@
 .. _tut-intro:
 
 **********************
-Whetting Your Appetite
+준비운동
 **********************
 
-If you do much work on computers, eventually you find that there's some task
-you'd like to automate.  For example, you may wish to perform a
-search-and-replace over a large number of text files, or rename and rearrange a
-bunch of photo files in a complicated way. Perhaps you'd like to write a small
-custom database, or a specialized GUI application, or a simple game.
+컴퓨터로 많은 일을 하다 보면, 자동으로 수행할 수 있는 작업이 존재함을 깨닫곤 할 것입니다. 
+예를 들어 여러 텍스트 파일에 대해 단어를 찾아서 바꿔야 할 때가 그렇습니다. 
+또는 수천 장의 사진에 대해 이름을 바꿔서 정리해야 할 때도 있습니다. 
+더 나아가서 작은 데이터베이스나 사소한 GUI 어플리케이션이나 간단한 게임을 제작할 경우도 있습니다.
 
-If you're a professional software developer, you may have to work with several
-C/C++/Java libraries but find the usual write/compile/test/re-compile cycle is
-too slow.  Perhaps you're writing a test suite for such a library and find
-writing the testing code a tedious task.  Or maybe you've written a program that
-could use an extension language, and you don't want to design and implement a
-whole new language for your application.
+만약 당신이 전문적인 소프트웨어 개발자라면, 여러 가지 C/C++/자바 라이브러리에 손을 댔다가 
+코딩/컴파일/테스트/리컴파일 과정이 너무 오래 걸려 짜증난 적이 있을 것입니다. 혹은 이런 라이브러리에 대해 
+테스트 코드를 짜다가 지겨워 죽을 것 같아 본 경험이 있을 것입니다. 혹은 프로그램에 스크립트를 통한 확장을 
+구현하고 싶지만, 고작 그 기능을 위해 새로운 언어를 디자인해야 할 지 고민해 본 적이 있을 것입니다.
 
-Python is just the language for you.
+파이썬은 그런 당신을 위한 언어입니다.
 
-You could write a Unix shell script or Windows batch files for some of these
-tasks, but shell scripts are best at moving around files and changing text data,
-not well-suited for GUI applications or games. You could write a C/C++/Java
-program, but it can take a lot of development time to get even a first-draft
-program.  Python is simpler to use, available on Windows, Mac OS X, and Unix
-operating systems, and will help you get the job done more quickly.
+물론 쉘 스크립트나 배치 파일을 사용하면 위에서 말한 작업들을 어느 정도 수행할 수 있지만, 쉘 스크립트는 
+파일을 옮기고 텍스트 데이터를 수정하는 데에 중점을 두었지, GUI 어플리케이션이나 게임에는 적합하지 않습니다. 
+C/C++/자바 프로그램을 짤 수도 있지만, 간단한 테스트를 해보려고 해도 개발하는 시간이 너무 많이 듭니다. 
+파이썬은 더 단순하고, 윈도우/OSX/유닉스 등의 운영체제에서 구동 가능하며, 다른 언어보다 더 빠른 작업을 
+수행할 수 있도록 해줍니다.
 
-Python is simple to use, but it is a real programming language, offering much
-more structure and support for large programs than shell scripts or batch files
-can offer.  On the other hand, Python also offers much more error checking than
-C, and, being a *very-high-level language*, it has high-level data types built
-in, such as flexible arrays and dictionaries.  Because of its more general data
-types Python is applicable to a much larger problem domain than Awk or even
-Perl, yet many things are at least as easy in Python as in those languages.
+파이썬은 단순하지만, 어쨌든 프로그래밍 언어입니다. 그러니까 쉘 스크립트나 배치 파일이 할 수 있는 것보다 
+더 복잡하고 큰 작업에도 적용이 가능합니다. 게다가, 파이썬은 C보다 더 강력한 에러 체킹 기능을 갖고 있으며, 
+플렉시블 배열이나 딕셔너리 등의 고차원 데이터형을 제공하는 *초-고차원 언어*입니다. 이렇듯 더 광범위한 
+데이터형 때문에 파이썬은 Awk나 Perl 같은 언어와 비슷한 수준의 용이함으로도 더 많은 문제를 해결할 수 있습니다.
 
-Python allows you to split your program into modules that can be reused in other
-Python programs.  It comes with a large collection of standard modules that you
-can use as the basis of your programs --- or as examples to start learning to
-program in Python.  Some of these modules provide things like file I/O, system
-calls, sockets, and even interfaces to graphical user interface toolkits like
-Tk.
+파이썬은 프로그램을 모듈로 나눠서, 다른 프로그램에서도 사용할 수 있도록 하는 기능을 제공합니다. 예를 들어 
+다양한 표준 모듈을 사용하여 프로그램의 기초적인 부분을 작성하거나 --- 혹은 파이썬을 처음 배울 때 예제로써 
+사용하는 것도 가능합니다. 이러한 모듈은 파일 입출력, 시스템 호출, 소켓, 또는 TK 같은 GUI의 기본적인 
+바탕 등으로 활용할 수 있습니다.
 
-Python is an interpreted language, which can save you considerable time during
-program development because no compilation and linking is necessary.  The
-interpreter can be used interactively, which makes it easy to experiment with
-features of the language, to write throw-away programs, or to test functions
-during bottom-up program development. It is also a handy desk calculator.
+파이썬은 인터프리팅 언어이므로, 컴파일이나 링크 과정에서 드는 시간을 절약할 수 있습니다. 이 인터프리터는 
+대화형으로 작동하며, 따라서 언어를 익히기 위해 이것저것 시험해 보거나, 잠깐 쓰고 말 프로그램이나, 
+처음부터 프로그램을 개발하는 과정에서 함수를 테스트해 보는 데에 유리합니다. 또한 간편한 계산기로도 쓸 수 
+있습니다.
 
-Python enables programs to be written compactly and readably.  Programs written
-in Python are typically much shorter than equivalent C,  C++, or Java programs,
-for several reasons:
+파이썬은 프로그램을 간결하고 읽기 쉽게 작성할 수 있도록 도와줍니다. 일반적으로 파이썬 코드는 C, C++, 
+또는 자바 프로그램보다 짧습니다. 이유는 이렇습니다:
 
-* the high-level data types allow you to express complex operations in a single
-  statement;
+* 파이썬은 고차원 데이터형을 지원하므로 복잡한 연산을 하나의 명령문으로 수행할 수 있습니다.
 
-* statement grouping is done by indentation instead of beginning and ending
-  brackets;
+* 파이썬은 중괄호 없이 단순히 들여쓰기만으로 명령문 블록을 구분할 수 있습니다.
 
-* no variable or argument declarations are necessary.
+* 파이썬은 변수나 인자를 미리 선언할 필요가 없습니다.
 
-Python is *extensible*: if you know how to program in C it is easy to add a new
-built-in function or module to the interpreter, either to perform critical
-operations at maximum speed, or to link Python programs to libraries that may
-only be available in binary form (such as a vendor-specific graphics library).
-Once you are really hooked, you can link the Python interpreter into an
-application written in C and use it as an extension or command language for that
-application.
+파이썬은 *유연합니다*: 만약 C를 사용할 줄 안다면, 인터프리터에 새로운 빌트인 함수나 모듈을 추가해서 중요한 
+작업을 최대한의 속도로 수행하거나 바이너리 형태로만 존재하는 라이브러리(제조사에서 제공하는 그래픽 라이브러리 등)을 
+파이썬 프로그램에 링크할 수 있습니다. 더 나아가, 파이썬 인터프리터를 C 어플리케이션에 링크한 후에 확장 스크립트나 
+커맨드 용도로 사용하는 것도 가능합니다.
 
-By the way, the language is named after the BBC show "Monty Python's Flying
-Circus" and has nothing to do with reptiles.  Making references to Monty
-Python skits in documentation is not only allowed, it is encouraged!
+파이썬이란 이름은 원래 BBC의 개그 프로그램인 "몬티 파이썬의 날으는 서커스"에서 따온 것입니다. 파충류와는 별로 
+상관이 없습니다. 그러니 몬티 파이썬의 드립을 문서에 사용한다고 나쁠 건 없겠지요.
 
-Now that you are all excited about Python, you'll want to examine it in some
-more detail.  Since the best way to learn a language is to use it, the tutorial
-invites you to play with the Python interpreter as you read.
+파이썬에 대한 기본적인 사항을 알아보았으니, 이제 좀 더 자세한 이야기를 해볼 차례입니다. 언어를 배우는 가장 좋은 
+방법은 일단 부딪혀 보는 겁니다. 이 튜토리얼도 당신이 파이썬 인터프리터를 갖고 놀 수 있도록 도와줄 것입니다.
 
-In the next chapter, the mechanics of using the interpreter are explained.  This
-is rather mundane information, but essential for trying out the examples shown
-later.
+다음 챕터에서는 인터프리터를 사용하는 방법에 대해 다룰 것입니다. 간단한 내용이지만, 뒤에 다룰 예제를 실행해보기 
+위해 꼭 알아야 할 내용입니다.
 
-The rest of the tutorial introduces various features of the Python language and
-system through examples, beginning with simple expressions, statements and data
-types, through functions and modules, and finally touching upon advanced
-concepts like exceptions and user-defined classes.
+나머지 부분에서는 파이썬 언어의 다양한 기능과 시스템을 예제를 통해 소개할 것입니다. 간단한 표현식에서부터, 
+명령문과 데이터형, 함수와 모듈, 마지막으로 예외나 사용자 정의 클래스 등까지 말이지요.
 
 
